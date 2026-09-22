@@ -36,3 +36,7 @@ img {
     list-style-type: none;
 }
                 
+.special {
+    color: #fff;
+    font-weight: bold;
+}
