@@ -20,14 +20,32 @@ h2, hr {
     text-align: center;
 }
 
-.box {
-    border: 1px solid #4774b7;
-    padding: 2% 10%;
-    margin: 20px auto;
-    width: 30%;
-}
 .logo {
     display: block;
     margin: 0 auto;
     width: 30%;
+}
+.lightBox {
+    border: 3px solid #4774b7;
+    padding: 2% 10%;
+    margin: 20px auto;
+    width: 30%;
+    background: white;
+    color: black;
+}
+.darkBox{
+    border: 3px solid #4774b7;
+    padding: 2% 10%;
+    margin: 20px auto;
+    width: 30%;
+    background: #333333;
+    color: white;
+}
+.dark{
+    background: #333333 ;
+    color: white;
+}
+.light{
+    background: white ;
+    color: black;
 }
