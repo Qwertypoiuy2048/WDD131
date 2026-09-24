@@ -14,6 +14,7 @@ fetch('pages.json')
 
             link.href = page.path;
             link.textContent = page.name;
+            link.classList = "foreverBlue";
             listItem.appendChild(link);
             pageList.appendChild(listItem);
         });
