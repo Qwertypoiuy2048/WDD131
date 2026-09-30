@@ -18,5 +18,13 @@
   {
     "name": "W02/dom.html",
     "path": "W02/dom.html"
+  },
+  {
+    "name": "W03/coolpics/index.html",
+    "path": "W03/coolpics/index.html"
+  },
+  {
+    "name": "W03/media-query.html",
+    "path": "W03/media-query.html"
   }
 ]
