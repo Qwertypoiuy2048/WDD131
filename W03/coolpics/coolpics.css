@@ -11,22 +11,6 @@ header {
     align-items: center;
 }
 
-/* h1 {
-
-}
-
-h2 {
-
-}
-
-div {
-
-}
-
-img {
-
-} */
-
 .menu_img {
     height: 3em;
 }
@@ -35,9 +19,9 @@ img {
     margin: auto;
 }
 
-/* .menu {
-
-} */
+nav {
+    display:none;
+}
 
 .gallery {
     display: grid;
@@ -78,5 +62,18 @@ img {
 @media screen and (min-width: 1200px) {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    header {
+        flex-direction: column-reverse;
+    }
+    .menu_img {
+        display: none;
+    }
+    nav {
+        display: flex;
+    }
+    nav a {
+        padding: 20px;
+        color: white;
     }
 }
