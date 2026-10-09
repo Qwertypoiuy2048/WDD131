@@ -19,10 +19,10 @@ gallerySection.addEventListener('click', (event) => {
         let modalImageLarge = modalImageSmall.replace('-sm.', '-full.');
         modalImage.src = modalImageLarge;
         
-        // wait for modal to load image before showing modal
-        modalImage.addEventListener('load', () => {
-            modal.showModal();
-        });
+        // wait for modal to load image before showing modal 
+        modalImage.addEventListener('load', () => { // add listener to ' load '
+            modal.showModal(); // then show
+        }); 
 
         // or in one line
         // modalImage.src = event.target.src.replace('-sm.', '-full.');
