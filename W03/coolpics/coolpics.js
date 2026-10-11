@@ -25,3 +25,21 @@ modal.addEventListener('click', (event) => {
         modal.close();
     }
 });
+
+
+let button = document.querySelector('.menu_btn');
+let menu = document.querySelector('.menu');
+let nav = document.querySelector('nav')
+let header = document.querySelector('header')
+
+// add event listener
+button.addEventListener('click', toggleMenu);
+
+// toggle menu visibility
+function toggleMenu() {
+    nav.classList.toggle('hidden');
+    button.classList.toggle('hidden');
+    
+    header.classList.toggle('dropdown');
+    nav.classList.toggle('dropdown');
+}
