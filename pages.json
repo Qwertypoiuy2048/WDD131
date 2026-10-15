@@ -26,5 +26,21 @@
   {
     "name": "W03/media-query.html",
     "path": "W03/media-query.html"
+  },
+  {
+    "name": "W03/responsive.html",
+    "path": "W03/responsive.html"
+  },
+  {
+    "name": "W04/gallery.html",
+    "path": "W04/gallery.html"
+  },
+  {
+    "name": "W04/responsive.html",
+    "path": "W04/responsive.html"
+  },
+  {
+    "name": "W05/movie.html",
+    "path": "W05/movie.html"
   }
 ]
