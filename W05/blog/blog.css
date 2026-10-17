@@ -17,7 +17,7 @@ hr{
 }
 
 .Book h2 {
-    color: #b30059;
+    color: #B30000;
     text-align: center;
     margin: 20px;
 }
@@ -60,7 +60,7 @@ header ul{
 header ul li a{
     margin: auto 40px;
     text-decoration: none;
-    color: red;
+    color: #B30000;
     font-size:larger;
 }
 
