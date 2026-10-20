@@ -40,7 +40,19 @@
     "path": "W04/responsive.html"
   },
   {
+    "name": "W05/blog/index.html",
+    "path": "W05/blog/index.html"
+  },
+  {
     "name": "W05/movie.html",
     "path": "W05/movie.html"
+  },
+  {
+    "name": "W06/arrays.html",
+    "path": "W06/arrays.html"
+  },
+  {
+    "name": "W06/movies.html",
+    "path": "W06/movies.html"
   }
 ]
