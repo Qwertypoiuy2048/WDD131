@@ -38,3 +38,23 @@ const articles = [
         stars: "⭐⭐⭐⭐⭐"
     }
 ];
+
+let bookList = document.querySelector("#BookList")
+
+articles.forEach(article => {
+    // Code for going through each movie and creating content for that movie
+    let Element = `
+    <article class="Book">
+        <div class="detailsBox">
+            <p class="details"> <em>${article.date}</em></p>
+            <p class="details">${article.ages}</p>
+            <p class="details">${article.genre}</p>
+            <p class="details">${article.stars}</p>
+            </div>
+            <h2 class="title">${article.title}</h2>
+                <img src="${article.imgSrc}" alt="${article.imgAlt}">
+                <p class="description">${article.description}</p>
+    </article>`;
+
+    bookList.innerHTML += Element;
+});

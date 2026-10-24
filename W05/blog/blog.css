@@ -64,8 +64,11 @@ header ul li a{
     font-size:larger;
 }
 
-footer p{
+footer p {
     text-align: center;
+}
+footer {
+    border-top: 3px solid gold;
 }
 
 @media screen and (min-width: 700px){

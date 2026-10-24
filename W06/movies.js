@@ -259,4 +259,3 @@ movies.forEach(movie => {
 
     section.innerHTML += movieElement;
 });
-          
