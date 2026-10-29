@@ -1,3 +1,24 @@
+// // grab input
+
+// // get form
+// const form = document.querySelector("#fsyForm");
+
+// // get user input
+// console.log(form)
+// console.log(form.firstName)
+
+// form.addEventListener('submit', (event) =>{
+//     // stops from reloading immediately
+//     event.preventDefault();
+
+//     // grab from var
+//     console.log(form.firstName.value);
+//     console.log(form.email.value);
+
+//     // grab from event
+//     console.log(event.target.email.value);
+// });
+
 
 const form = document.querySelector("#fsyForm");
 const travelRange = document.querySelector("#travelRange");
@@ -45,13 +66,27 @@ form.addEventListener("submit", function (event) {
 
     // Validate the input
     // Let the user know to select at least one campus
+    console.log(getSelectedCampuses())
+    console.log(getSelectedCampuses().length)
 
+    if (getSelectedCampuses().length < 1){
+        // add message
+        output.textContent += "Please select un univeridad\n"
+        // prematurely exit so the other code doesn't run
+    }
 
     // Let the user know if they choose many campuses but didn't put a note that they need to add a note
 
 
     //Let the user know if they choose many campus but only had one campus selected that they need to choose at least two campuses
-
+    if (type == 'many'){
+        if (getSelectedCampuses().length < 2) {
+            // add message
+            output.textContent += "Please select muy univeridad\n"
+            // prematurely exit so the other code doesn't run
+            return
+        }
+    }
 
     if (isPastDate(availableDate)) {
         output.textContent = "Please choose a later date.";
