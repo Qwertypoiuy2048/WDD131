@@ -68,11 +68,19 @@
     "path": "W07/playforms.html"
   },
   {
+    "name": "W08/charactercard/index.html",
+    "path": "W08/charactercard/index.html"
+  },
+  {
     "name": "W08/courses.html",
     "path": "W08/courses.html"
   },
   {
     "name": "W08/dice_game/game.html",
     "path": "W08/dice_game/game.html"
+  },
+  {
+    "name": "W09/flexbox.html",
+    "path": "W09/flexbox.html"
   }
 ]
