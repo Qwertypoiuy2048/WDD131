@@ -32,35 +32,36 @@
 
 <body>
     <header>
-        <img src="https://wddbyui.github.io/wdd131/images/recipe1/recipe-book.png" alt="Recipe Book Logo">
+        <img src="https://wddbyui.github.io/wdd131/images/recipe1/recipe-book.png" alt="Recipe Book Logo" class="logo">
         <h1>Recipe Book</h1>
-        <form action="submit">
-            <input type="search" placeholder="Find a Recipe"></input>
-            <input type="submit">
-                <img src="https://wddbyui.github.io/wdd131/images/recipe1/search.svg" alt="Search" class="search">
-            </input>
-        </form>
     </header>
+    <form class="searchbox">
+        <input type="search" placeholder="Find a Recipe"></input>
+        <button type="submit">
+            <img src="https://wddbyui.github.io/wdd131/images/recipe1/search.svg" alt="Search" class="search">
+        </button>
+    </form>
     <hr>
     <section class="recipe">
-        <img src="https://wddbyui.github.io/wdd131/images/recipe1/apple-crisp.jpg" alt="Apple Crisp">
-        <div class="tags">
-            <div class="tag">
-                <p>dessert</p>
+        <img src="https://wddbyui.github.io/wdd131/images/recipe1/apple-crisp.jpg" alt="Apple Crisp" class="recipe-img">
+        <div class="recipe-details">
+            <div class="tags">
+                <div class="tag">
+                    <p>dessert</p>
+                </div>
             </div>
+            <h3 class="name">Apple Crisp</h3>
+            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+            <p class="description">A wonderful description of our recipe</p>
         </div>
-        <h3 class="name">Apple Crisp</h3>
-        <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star">⭐</span>
-            <span aria-hidden="true" class="icon-star-empty">☆</span>
-        </span>
     </section>
     <footer>
-        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik -
-            Flaticon</a>
         <div class="social">
             <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
             <a href="#"><img src="https://wddbyui.github.io/wdd131/images/recipe1/instagram_icon.svg"
@@ -70,6 +71,8 @@
             <a href="#"><img src="https://wddbyui.github.io/wdd131/images/recipe1/pinterest_icon.svg"
                     alt="pinterest icon"></a>
         </div>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik -
+            Flaticon</a>
     </footer>
 </body>
 
