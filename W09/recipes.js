@@ -287,7 +287,7 @@ const recipes = [
 
 function RecipeTemplate(recipe) {
 
-    recipe_html = `
+    let recipe_html = `
 <section class="recipe">
 <img src="${recipe.image}" alt="${recipe.name} image"
 class="recipe-img">
@@ -332,9 +332,8 @@ class="recipe-img">
 }
 
 
-function renderRecipe(hike) {
-    let recipe_html = RecipeTemplate(hike);
-    container.innerHTML += recipe_html;
+function renderRecipe(recipe) {
+    container.innerHTML += RecipeTemplate(recipe);
 }
 
 
@@ -344,15 +343,24 @@ document.querySelector("#searchButton").addEventListener("click", e => {
     const input = document.querySelector("#search").value.toLowerCase();
     console.log(input)
     const recipesFiltered = recipes.filter((recipe) => {
-        if (recipe.author.toLowerCase().includes(input)){
-        return true;
-    }
-    return false;
+        if (recipe.author.toLowerCase().includes(input)){return true;}
+        if (recipe.name.toLowerCase().includes(input)){return true;}
+        if (recipe.description.toLowerCase().includes(input)){return true;}
+        recipe.recipeIngredient.forEach((i) => {if (i.toLowerCase().includes(input)){return true;}})
+        recipe.recipeInstructions.forEach((i) => {if (i.toLowerCase().includes(input)){return true;}})
+        recipe.tags.forEach((i) => {if (i.toLowerCase().includes(input)){return true;}})
+        return false;
     });
     console.log(recipesFiltered)
 
-    recipesFiltered.forEach(function (hike) {
-        renderRecipe(hike);
+    container.innerHTML = ""
+    
+    recipesFiltered.forEach(function (recipe) {
+        renderRecipe(recipe);
     });
     
 });
+
+container.innerHTML = ""
+
+renderRecipe(recipes[5]);
